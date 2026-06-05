@@ -1,10 +1,10 @@
-# Capsiguard - AI-Powered Chilli Disease Detection (MERN Rebuild)
+# Capsiguard - AI-Powered Chilli Disease Detection
 
-Capsiguard is a web-based agricultural dashboard designed to identify plant diseases in chilli crop leaves using machine learning. This repository contains a complete rebuild of the original Django prototype using the **MERN (MongoDB, Express, React, Node.js)** stack with **Vite** and **Tailwind CSS**.
+Capsiguard is a web-based agricultural dashboard designed to identify plant diseases in chilli crop leaves using machine learning. The project is built using the **MERN (MongoDB, Express, React, Node.js)** stack with **Vite** and **Tailwind CSS**.
 
 ---
 
-## 🚀 Key Enhancements (Over Django Prototype)
+## 🚀 Core Features
 - **Token-based Authentication**: Secure user registration and session management powered by JWT and bcrypt.
 - **Detailed History Log**: Analysis history is tracked dynamically in MongoDB, allowing users to browse their previous reports.
 - **Annotated Leaf Display**: Bounding boxes highlighting disease locations are dynamically overlaid onto leaf images on the backend using the `sharp` library (SVG compositing).
@@ -12,7 +12,7 @@ Capsiguard is a web-based agricultural dashboard designed to identify plant dise
 
 ---
 
-## 📁 Repository Structure
+## 📁 Project Structure
 
 ```text
 Capsiguard/
@@ -24,16 +24,14 @@ Capsiguard/
 │   ├── package.json               # Backend dependencies (express, mongoose, sharp, etc.)
 │   └── server.js                  # Main server entrypoint
 │
-├── frontend/                      # React SPA with Vite & Tailwind CSS
-│   ├── src/
-│   │   ├── pages/                 # UI pages (Landing, Login, Signup, Dashboard)
-│   │   ├── App.jsx                # Router & Auth Context provider
-│   │   ├── index.css              # Styling rules & animated backgrounds
-│   │   └── main.jsx               # React entrypoint
-│   ├── package.json               # Frontend dependencies (react, lucide, tailwind, etc.)
-│   └── tailwind.config.js         # Tailwind styling definitions
-│
-└── Capsiguard-Django/             # Original Django project folder (preserved & untouched)
+└── frontend/                      # React SPA with Vite & Tailwind CSS
+    ├── src/
+    │   ├── pages/                 # UI pages (Landing, Login, Signup, Dashboard)
+    │   ├── App.jsx                # Router & Auth Context provider
+    │   ├── index.css              # Styling rules & animated backgrounds
+    │   └── main.jsx               # React entrypoint
+    ├── package.json               # Frontend dependencies (react, lucide, tailwind, etc.)
+    └── tailwind.config.js         # Tailwind styling definitions
 ```
 
 ---
@@ -76,7 +74,7 @@ Before running the project locally, ensure you have:
    ```bash
    cd frontend
    ```
-2. Install npm dependencies (resolving peer dependency configurations if needed):
+2. Install npm dependencies:
    ```bash
    npm install --legacy-peer-deps
    ```
